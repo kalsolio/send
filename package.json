@@ -125,7 +125,7 @@
     "express": "^4.16.2",
     "fluent": "^0.6.3",
     "fluent-langneg": "^0.1.0",
-    "helmet": "^3.12.0",
+    "helmet": "^3.21.1",
     "mkdirp": "^0.5.1",
     "mozlog": "^2.2.0",
     "raven": "^2.4.2",
