@@ -31,7 +31,9 @@
     "test-integration": "docker-compose up --abort-on-container-exit --exit-code-from integration-tests --build --remove-orphans --quiet-pull && docker-compose down",
     "test-integration-stage": "cross-env BASE_URL=https://send.stage.mozaws.net npm run test-integration",
     "start": "npm run clean && cross-env NODE_ENV=development webpack-dev-server",
-    "prod": "node server/prod.js"
+    "prod": "node server/prod.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "lint-staged": {
     "*.js": [
@@ -129,7 +131,8 @@
     "mkdirp": "^0.5.1",
     "mozlog": "^2.2.0",
     "raven": "^2.4.2",
-    "redis": "^2.8.0"
+    "redis": "^2.8.0",
+    "snyk": "^1.316.1"
   },
   "availableLanguages": [
     "en-US",
@@ -182,5 +185,6 @@
     "vi",
     "zh-CN",
     "zh-TW"
-  ]
+  ],
+  "snyk": true
 }
