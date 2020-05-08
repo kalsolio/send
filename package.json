@@ -121,7 +121,7 @@
     "choo": "^6.10.0",
     "cldr-core": "^32.0.0",
     "connect-busboy": "0.0.2",
-    "convict": "^4.0.1",
+    "convict": "^6.0.0",
     "express": "^4.16.2",
     "fluent": "^0.6.3",
     "fluent-langneg": "^0.1.0",
